@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://edge.example/services/ai-search",
+  "name": "AI search integration",
+  "description": "Embedded Qdrant Edge retrieval for a local NLWeb Widget domain example."
+}

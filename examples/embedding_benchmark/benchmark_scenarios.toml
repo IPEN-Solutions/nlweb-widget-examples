@@ -1,0 +1,256 @@
+# Workspace-owned scenario catalogue. Edit this file to add or tune benchmark runs.
+# Supported source format is JSONL with the benchmark Document / Query schema.
+# Every scenario compares models against the same registry-selected corpus and judgments.
+
+[scenario_types.models_one_embedder]
+title = "One embedder, one corpus, one or more models"
+description = "Compares one or more models through a single embedding backend against identical data."
+
+[scenario_types.two_embedders_one_model_family]
+title = "Two embedders, compatible baseline model family, one corpus"
+description = "Compares the same model family across two embedding backends."
+
+[scenarios.st-e5-small]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: intfloat/multilingual-e5-small."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-e5-small.runs]]
+name = "e5-small"
+backend = "sentence-transformers"
+model = "intfloat/multilingual-e5-small"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = "query: "
+document_prefix = "passage: "
+
+[scenarios.st-multilingual-minilm]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-multilingual-minilm.runs]]
+name = "multilingual-minilm"
+backend = "sentence-transformers"
+model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = ""
+document_prefix = ""
+
+[scenarios.st-nomic-v2-moe]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: nomic-ai/nomic-embed-text-v2-moe."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-nomic-v2-moe.runs]]
+name = "nomic-v2-moe"
+backend = "sentence-transformers"
+model = "nomic-ai/nomic-embed-text-v2-moe"
+device = "cpu"
+batch_size = 1
+trust_remote_code = true
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+
+[scenarios.st-e5-small-plus-minilm]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: intfloat/multilingual-e5-small, sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-e5-small-plus-minilm.runs]]
+name = "e5-small"
+backend = "sentence-transformers"
+model = "intfloat/multilingual-e5-small"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = "query: "
+document_prefix = "passage: "
+
+[[scenarios.st-e5-small-plus-minilm.runs]]
+name = "multilingual-minilm"
+backend = "sentence-transformers"
+model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = ""
+document_prefix = ""
+
+[scenarios.st-e5-small-plus-nomic]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: intfloat/multilingual-e5-small, nomic-ai/nomic-embed-text-v2-moe."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-e5-small-plus-nomic.runs]]
+name = "e5-small"
+backend = "sentence-transformers"
+model = "intfloat/multilingual-e5-small"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = "query: "
+document_prefix = "passage: "
+
+[[scenarios.st-e5-small-plus-nomic.runs]]
+name = "nomic-v2-moe"
+backend = "sentence-transformers"
+model = "nomic-ai/nomic-embed-text-v2-moe"
+device = "cpu"
+batch_size = 1
+trust_remote_code = true
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+
+[scenarios.st-minilm-plus-nomic]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, nomic-ai/nomic-embed-text-v2-moe."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-minilm-plus-nomic.runs]]
+name = "multilingual-minilm"
+backend = "sentence-transformers"
+model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = ""
+document_prefix = ""
+
+[[scenarios.st-minilm-plus-nomic.runs]]
+name = "nomic-v2-moe"
+backend = "sentence-transformers"
+model = "nomic-ai/nomic-embed-text-v2-moe"
+device = "cpu"
+batch_size = 1
+trust_remote_code = true
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+
+[scenarios.st-all-three]
+type = "models_one_embedder"
+description = "Sentence Transformers model sweep: intfloat/multilingual-e5-small, sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, nomic-ai/nomic-embed-text-v2-moe."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.st-all-three.runs]]
+name = "e5-small"
+backend = "sentence-transformers"
+model = "intfloat/multilingual-e5-small"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = "query: "
+document_prefix = "passage: "
+
+[[scenarios.st-all-three.runs]]
+name = "multilingual-minilm"
+backend = "sentence-transformers"
+model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = ""
+document_prefix = ""
+
+[[scenarios.st-all-three.runs]]
+name = "nomic-v2-moe"
+backend = "sentence-transformers"
+model = "nomic-ai/nomic-embed-text-v2-moe"
+device = "cpu"
+batch_size = 1
+trust_remote_code = true
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+
+[scenarios.ollama-nomic-v2-moe]
+type = "models_one_embedder"
+description = "Ollama local Nomic Embed v2 MoE quantized model."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.ollama-nomic-v2-moe.runs]]
+name = "ollama-nomic-v2-moe"
+backend = "ollama"
+model = "nomic-embed-text-v2-moe.Q4_K_S-local"
+ollama_url = "http://127.0.0.1:11434"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+model_family = "nomic-embed-text-v2-moe"
+
+[scenarios.compare-nomic-v2-moe-embedders]
+type = "two_embedders_one_model_family"
+description = "Compare Hugging Face Nomic v2 MoE and the local Ollama quantized Nomic v2 MoE model."
+source_registry = "nlweb-sources.json"
+corpus_source = "benchmark-corpus"
+query_source = "benchmark-queries"
+top_k = 5
+max_cosine_distance = 0.35
+primary_metric = "tracks.hybrid_rrf.ndcg_at_10"
+
+[[scenarios.compare-nomic-v2-moe-embedders.runs]]
+name = "sentence-transformers-nomic-v2-moe"
+backend = "sentence-transformers"
+model = "nomic-ai/nomic-embed-text-v2-moe"
+device = "cpu"
+batch_size = 1
+trust_remote_code = true
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+model_family = "nomic-embed-text-v2-moe"
+
+[[scenarios.compare-nomic-v2-moe-embedders.runs]]
+name = "ollama-nomic-v2-moe-q4-k-s"
+backend = "ollama"
+model = "nomic-embed-text-v2-moe.Q4_K_S-local"
+ollama_url = "http://127.0.0.1:11434"
+device = "cpu"
+batch_size = 1
+trust_remote_code = false
+query_prefix = "search_query: "
+document_prefix = "search_document: "
+model_family = "nomic-embed-text-v2-moe"

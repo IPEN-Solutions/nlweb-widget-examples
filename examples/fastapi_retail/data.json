@@ -1,0 +1,58 @@
+[
+  {
+    "id": "retail-ai-transformation",
+    "url": "https://retail.example/services/ai-transformation",
+    "title": "Retail AI Transformation",
+    "content": "AI transformation and modernization services for retail companies, covering readiness, strategy, agent solutions and process automation.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://retail.example/services/ai-transformation",
+      "name": "Retail AI Transformation",
+      "serviceType": "AI transformation consulting",
+      "description": "AI transformation and modernization services for retail companies."
+    }
+  },
+  {
+    "id": "retail-customer-experience",
+    "url": "https://retail.example/services/customer-experience",
+    "title": "AI Customer Experience",
+    "content": "Retail personalization and customer experience services using AI-enabled journeys, data integration and customer insight.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://retail.example/services/customer-experience",
+      "name": "AI Customer Experience",
+      "serviceType": "Customer experience consulting",
+      "description": "Personalization and AI customer experience services for retailers."
+    }
+  },
+  {
+    "id": "retail-commerce-modernization",
+    "url": "https://retail.example/services/commerce-modernization",
+    "title": "Commerce Modernization",
+    "content": "Modernization of retail commerce operations through AI-enabled workflows, data integration and connected customer journeys.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://retail.example/services/commerce-modernization",
+      "name": "Commerce Modernization",
+      "serviceType": "Commerce modernization",
+      "description": "Modernizes retail commerce operations with AI-enabled workflows and data integration."
+    }
+  },
+  {
+    "id": "retail-agent-solutions",
+    "url": "https://retail.example/services/agent-solutions",
+    "title": "AI Agent and Knowledge Solutions",
+    "content": "Agentic workflows and knowledge solutions for retail teams, connecting governed business information with AI-assisted experiences.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://retail.example/services/agent-solutions",
+      "name": "AI Agent and Knowledge Solutions",
+      "serviceType": "AI agent development",
+      "description": "Agentic workflows and knowledge solutions for retail teams."
+    }
+  }
+]

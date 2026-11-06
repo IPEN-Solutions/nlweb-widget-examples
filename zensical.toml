@@ -1,0 +1,71 @@
+[project]
+site_name = "NLWeb Widget Examples"
+docs_dir = "docs"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Changelog" = "changelog.md" },
+  { "Getting started" = [
+    { "Overview" = "getting-started/overview.md" },
+    { "Architecture" = "getting-started/architecture.md" },
+    { "Run an example" = "getting-started/run-an-example.md" },
+  ] },
+  { "Concepts" = [
+    { "Mental model" = "concepts/mental-model.md" },
+    { "Runtime flow" = "concepts/runtime-flow.md" },
+    { "Protocol, visibility and AI" = "concepts/protocol-vs-ai.md" },
+    { "Domain data and authority" = "concepts/data-and-authority.md" },
+    { "Scenario data" = "concepts/scenario-data.md" },
+    { "Providers and stores" = "concepts/providers-and-stores.md" },
+  ] },
+  { "Frameworks" = [
+    { "Framework guide" = "frameworks/overview.md" },
+    { "FastAPI" = "frameworks/fastapi.md" },
+    { "Flask" = "frameworks/flask.md" },
+    { "Django" = "frameworks/django.md" },
+    { "Starlette" = "frameworks/starlette.md" },
+    { "stdlib HTTP" = "frameworks/stdlib.md" },
+  ] },
+  { "AskAgent" = [
+    { "Overview" = "askagent/overview.md" },
+    { "Local topology" = "askagent/local-runtime.md" },
+    { "Visibility testing" = "askagent/visibility-testing.md" },
+  ] },
+  { "Guides" = [
+    { "Published vs local widget" = "guides/widget-source-modes.md" },
+    { "Build your own example" = "guides/build-your-own-example.md" },
+    { "Configured providers" = "guides/provider-backends.md" },
+    { "Embedding benchmark" = "guides/embedding-benchmark.md" },
+    { "Local Scrapy + Ollama" = "guides/local-scrapy-ollama.md" },
+    { "Local Scrapy + Hugging Face Transformers" = "guides/local-scrapy-transformers.md" },
+    { "Remote storage options" = "guides/remote-storage.md" },
+    { "CouchDB document store" = "guides/document-store-couchdb.md" },
+    { "Authoritative domain data contract" = "guides/authoritative-domain-data-contract.md" },
+    { "External hosted sources" = "guides/external-hosted-sources.md" },
+  ] },
+  { "Reference" = [
+    { "Framework comparison" = "reference/framework-comparison.md" },
+    { "Runtime topology" = "reference/runtime-topology.md" },
+    { "What examples prove" = "reference/what-examples-prove.md" },
+    { "Troubleshooting" = "reference/troubleshooting.md" },
+  ] },
+]
+
+[project.theme]
+name = "material"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+

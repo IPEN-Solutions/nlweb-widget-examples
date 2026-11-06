@@ -1,0 +1,90 @@
+{
+  "version": "1",
+  "artifacts": [
+    {
+      "artifact": "capabilities.md",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/capabilities.md",
+        "description": "Example evidence reference for capabilities.md",
+        "citations": [
+          {
+            "label": "Capabilities",
+            "source_url": "https://example.org/evidence/capabilities.md"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    },
+    {
+      "artifact": "capabilities.txt",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/capabilities.txt",
+        "description": "Example evidence reference for capabilities.txt",
+        "citations": [
+          {
+            "label": "Capabilities",
+            "source_url": "https://example.org/evidence/capabilities.txt"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    },
+    {
+      "artifact": "digital-engineering-brief.pdf",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/digital-engineering-brief.pdf",
+        "description": "Example evidence reference for digital-engineering-brief.pdf",
+        "citations": [
+          {
+            "label": "Digital Engineering Brief",
+            "source_url": "https://example.org/evidence/digital-engineering-brief.pdf"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    },
+    {
+      "artifact": "domain.jsonld",
+      "type": "Organization",
+      "grounding": {
+        "source": "https://example.org/evidence/domain.jsonld",
+        "description": "Example evidence reference for domain.jsonld",
+        "citations": [
+          {
+            "label": "Domain",
+            "source_url": "https://example.org/evidence/domain.jsonld"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Organization"
+        ]
+      }
+    },
+    {
+      "artifact": "industrial-platforms.pptx",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/industrial-platforms.pptx",
+        "description": "Example evidence reference for industrial-platforms.pptx",
+        "citations": [
+          {
+            "label": "Industrial Platforms",
+            "source_url": "https://example.org/evidence/industrial-platforms.pptx"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    }
+  ]
+}

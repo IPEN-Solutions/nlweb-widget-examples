@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"Service","@id":"https://example-ai-transform.example/services/ai-readiness","name":"AI Readiness Assessment","serviceType":"AI readiness assessment","provider":{"@id":"https://example-ai-transform.example/#organization"},"audience":{"@type":"Audience","audienceType":"Businesses and organizations"},"description":"Demo assessment covering AI opportunities, data readiness, operating model considerations and implementation priorities."},
+    {"@type":"Service","@id":"https://example-ai-transform.example/services/ai-strategy","name":"AI Strategy & Roadmap","serviceType":"AI strategy consulting","provider":{"@id":"https://example-ai-transform.example/#organization"},"description":"Demo consulting service for defining an AI adoption strategy and phased implementation roadmap."},
+    {"@type":"Service","@id":"https://example-ai-transform.example/services/agent-solutions","name":"AI Agent & Knowledge Solutions","serviceType":"AI agent development and knowledge systems","provider":{"@id":"https://example-ai-transform.example/#organization"},"description":"Demo service for agentic workflows, retrieval systems and enterprise knowledge experiences."},
+    {"@type":"Service","@id":"https://example-ai-transform.example/services/automation","name":"AI Process Automation","serviceType":"AI-enabled process automation","provider":{"@id":"https://example-ai-transform.example/#organization"},"description":"Demo service for identifying and automating suitable business processes with AI-enabled workflows."}
+  ]
+}

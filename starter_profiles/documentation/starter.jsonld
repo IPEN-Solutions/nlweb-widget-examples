@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://example.com/documentation/#entity",
+  "name": "Example Documentation",
+  "url": "https://example.com/documentation/",
+  "description": "Documentation starter profile. Replace with authoritative domain content."
+}

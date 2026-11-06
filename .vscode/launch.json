@@ -1,0 +1,252 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: FastAPI example",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.fastapi_retail.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ]
+    },
+    {
+      "name": "Python: Agent visibility demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/fastapi_retail/agent_demo.py"
+    },
+    {
+      "name": "Python: Current test file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "${file}",
+        "-q"
+      ]
+    },
+    {
+      "name": "Python: AskAgent visibility test",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/visibility/test_askagent_visibility.py",
+        "-q"
+      ]
+    },
+    {
+      "name": "Python: Provider haystack_inmemory",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.provider_backends.haystack_inmemory.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/provider_backends/haystack_inmemory/.env"
+    },
+    {
+      "name": "Python: Provider haystack_inmemory query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/provider_backends/haystack_inmemory/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/provider_backends/haystack_inmemory/.env"
+    },
+    {
+      "name": "Python: Provider qdrant_edge",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.provider_backends.qdrant_edge.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/provider_backends/qdrant_edge/.env"
+    },
+    {
+      "name": "Python: Provider qdrant_edge query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/provider_backends/qdrant_edge/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/provider_backends/qdrant_edge/.env"
+    },
+    {
+      "name": "Python: Provider qdrant_server",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.provider_backends.qdrant_server.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/provider_backends/qdrant_server/.env"
+    },
+    {
+      "name": "Python: Provider qdrant_server query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/provider_backends/qdrant_server/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/provider_backends/qdrant_server/.env"
+    },
+    {
+      "name": "Python: Provider postgres_pgvector",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.provider_backends.postgres_pgvector.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/provider_backends/postgres_pgvector/.env"
+    },
+    {
+      "name": "Python: Provider postgres_pgvector query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/provider_backends/postgres_pgvector/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/provider_backends/postgres_pgvector/.env"
+    },
+    {
+      "name": "Python: Provider neo4j",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.provider_backends.neo4j.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/provider_backends/neo4j/.env"
+    },
+    {
+      "name": "Python: Provider neo4j query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/provider_backends/neo4j/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/provider_backends/neo4j/.env"
+    },
+    {
+      "name": "Python: Provider sqlite",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.provider_backends.sqlite.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/provider_backends/sqlite/.env"
+    },
+    {
+      "name": "Python: Provider sqlite query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/provider_backends/sqlite/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/provider_backends/sqlite/.env"
+    },
+    {
+      "name": "Python: External hosted sources FastAPI",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "examples.external_hosted_sources.domain_site_extractor.app:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000"
+      ],
+      "envFile": "${workspaceFolder}/examples/external_hosted_sources/domain_site_extractor/.env"
+    },
+    {
+      "name": "Python: External hosted sources query demo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/external_hosted_sources/domain_site_extractor/query_demo.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/external_hosted_sources/domain_site_extractor/.env"
+    },
+    {
+      "name": "Python: External hosted sources extraction demo",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "examples.external_hosted_sources.domain_site_extractor.demo",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/external_hosted_sources/domain_site_extractor/.env"
+    },
+    {
+      "name": "Python: External hosted sources tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/test_external_hosted_sources.py",
+        "-q"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Local Scrapy + Ollama domain extraction",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "examples.external_hosted_sources.domain_site_extractor.local_scrapy_ollama",
+      "args": [
+        "https://example.org/",
+        "--allowed-hosts",
+        "example.org"
+      ],
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/examples/external_hosted_sources/domain_site_extractor/.env"
+    },
+    {
+      "name": "Python: Local Scrapy + Ollama extraction tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/test_local_scrapy_ollama.py",
+        "-q"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: CouchDB document-store tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/test_document_store_couchdb.py",
+        "-q"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

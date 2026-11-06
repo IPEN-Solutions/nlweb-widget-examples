@@ -1,0 +1,22 @@
+# Human-readable and machine-readable extraction prompts.
+# Prompts are data, not executable code, so they can be reviewed/versioned independently.
+
+[scenarios.company_website]
+prompt = "Preserve every relevant valid Schema.org JSON-LD object found in application/ld+json script tags as additive records, including Organization, WebSite, Service, Product, Article, and relationship declarations. Do not discard these objects merely because extracted text already describes the same page; retain source URLs, @id, @type, names, descriptions, and explicit relationships. Do not claim authenticity is verified and do not invent or rewrite source claims. Extract first-party organization facts, services, products, areas of expertise, locations, contact points, and relevant authoritative links. Preserve source URLs and distinguish explicit facts from inferred descriptions."
+schema_hint = { records = [{ "@type" = "Organization", name = "", description = "", url = "", sameAs = [] }] }
+
+[scenarios.company_knowledge_base]
+prompt = "Preserve every relevant valid Schema.org JSON-LD object found in application/ld+json script tags as additive records, including Organization, WebSite, Service, Product, Article, and relationship declarations. Do not discard these objects merely because extracted text already describes the same page; retain source URLs, @id, @type, names, descriptions, and explicit relationships. Do not claim authenticity is verified and do not invent or rewrite source claims. Extract useful first-party knowledge-base articles, FAQs, product capabilities, support topics, and canonical article URLs. Preserve article titles, descriptions, source URLs, and any explicit product/service relationships."
+schema_hint = { records = [{ "@type" = "Article", headline = "", description = "", url = "", about = [] }] }
+
+[scenarios.company_portal]
+prompt = "Preserve every relevant valid Schema.org JSON-LD object found in application/ld+json script tags as additive records, including Organization, WebSite, Service, Product, Article, and relationship declarations. Do not discard these objects merely because extracted text already describes the same page; retain source URLs, @id, @type, names, descriptions, and explicit relationships. Do not claim authenticity is verified and do not invent or rewrite source claims. Extract authoritative company portal or documentation information that is suitable for domain discovery: capabilities, procedures, integrations, technical concepts, service descriptions, and canonical links. Do not invent credentials, private data, or unsupported relationships."
+schema_hint = { records = [{ "@type" = "TechArticle", headline = "", description = "", url = "", about = [] }] }
+
+[scenarios.product_service_catalog]
+prompt = "Preserve every relevant valid Schema.org JSON-LD object found in application/ld+json script tags as additive records, including Organization, WebSite, Service, Product, Article, and relationship declarations. Do not discard these objects merely because extracted text already describes the same page; retain source URLs, @id, @type, names, descriptions, and explicit relationships. Do not claim authenticity is verified and do not invent or rewrite source claims. Extract product or service catalog records including names, descriptions, categories, capabilities, supported industries, documentation links, and explicit relationships. Preserve source URLs and avoid guessing missing commercial facts."
+schema_hint = { records = [{ "@type" = "Product", name = "", description = "", url = "", category = "" }] }
+
+[scenarios.company_newsroom]
+prompt = "Preserve every relevant valid Schema.org JSON-LD object found in application/ld+json script tags as additive records, including Organization, WebSite, Service, Product, Article, and relationship declarations. Do not discard these objects merely because extracted text already describes the same page; retain source URLs, @id, @type, names, descriptions, and explicit relationships. Do not claim authenticity is verified and do not invent or rewrite source claims. Extract first-party newsroom or publication items including headline, publication date when explicitly present, summary, canonical URL, and the organization/product/service topics explicitly mentioned."
+schema_hint = { records = [{ "@type" = "NewsArticle", headline = "", datePublished = "", description = "", url = "", about = [] }] }

@@ -1,0 +1,14 @@
+{
+  "profiles": [
+    "ai-digital-transformation-agency",
+    "ai-reach-marketing-agency",
+    "documentation",
+    "ecommerce",
+    "generic-business",
+    "local-business",
+    "organization",
+    "professional-services",
+    "publisher",
+    "saas"
+  ]
+}

@@ -1,0 +1,1 @@
+AI services for manufacturing include computer-vision workflows, predictive analytics, knowledge assistants, industrial data pipelines, and AI-enabled operational applications. Engagements can cover discovery, architecture, implementation, integration, deployment, and ongoing support.

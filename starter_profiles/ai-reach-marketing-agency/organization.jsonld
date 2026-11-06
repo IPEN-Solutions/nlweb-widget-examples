@@ -1,0 +1,8 @@
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "@id":"https://example-ai-reach.example/#organization",
+  "name":"Example AI-Reach Marketing Studio",
+  "url":"https://example-ai-reach.example/",
+  "description":"Demo digital marketing agency combining organic inbound marketing, MarTech, structured content and AI-facing discoverability practices."
+}

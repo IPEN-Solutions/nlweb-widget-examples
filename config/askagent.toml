@@ -1,0 +1,26 @@
+[askagent]
+upstream_repository = "https://github.com/nlweb-ai/nlweb-ask-agent"
+upstream_python_minimum = "3.12"
+provider_wiring_verified_against_upstream_revision = false
+url = "http://127.0.0.1:8001"
+python = ">=3.12,<3.15"
+
+[askagent.llm]
+provider = "openrouter"
+# Override with ASKAGENT_MODEL. Keep this exact value pinned when the upstream
+# AskAgent revision is selected for the reference suite.
+model = "openai/gpt-4o-mini"
+max_tokens = 512
+
+[askagent.embeddings]
+provider = "sentence-transformers"
+model = "sentence-transformers/all-MiniLM-L6-v2"
+
+[askagent.ui]
+enabled = false
+url = "http://127.0.0.1:8002"
+
+[askagent.test]
+external_network_required = false
+live_llm_required = false
+real_http_boundary_required = true

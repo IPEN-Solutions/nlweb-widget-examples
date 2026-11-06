@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "name": "neo4j-domain-content",
+      "kind": "custom",
+      "location": "content/inbox",
+      "site": "neo4j-demo",
+      "enabled": true,
+      "metadata": {
+        "url": "https://ipen.example/"
+      }
+    },
+    {
+      "name": "authoritative_domain_document_store",
+      "kind": "custom",
+      "location": "couchdb+${NLWEB_COUCHDB_URL}/${NLWEB_COUCHDB_DATABASE}",
+      "site": "neo4j-demo",
+      "enabled": false,
+      "metadata": {
+        "purpose": "optional-consumer-authoritative-document-store-source",
+        "corpus_role": "supplemental-or-authoritative-as-configured",
+        "url": "https://ipen.example/",
+        "document_store_options": {
+          "database": "${NLWEB_COUCHDB_DATABASE}",
+          "username": "${NLWEB_DOCUMENT_STORE_USERNAME}",
+          "password": "${NLWEB_DOCUMENT_STORE_PASSWORD}"
+        }
+      }
+    },
+    {
+      "name": "authoritative_domain_remote_storage",
+      "kind": "custom",
+      "location": "s3://${NLWEB_REMOTE_STORAGE_BUCKET}/",
+      "site": "neo4j-demo",
+      "enabled": false,
+      "metadata": {
+        "purpose": "optional-consumer-authoritative-remote-object-storage-source",
+        "corpus_role": "supplemental-or-authoritative-as-configured",
+        "url": "https://ipen.example/"
+      },
+      "remote_storage_options": {
+        "key": "${NLWEB_REMOTE_STORAGE_ACCESS_KEY}",
+        "secret": "${NLWEB_REMOTE_STORAGE_SECRET_KEY}",
+        "client_kwargs": {
+          "region_name": "${NLWEB_REMOTE_STORAGE_REGION}",
+          "endpoint_url": "${NLWEB_REMOTE_STORAGE_ENDPOINT_URL}"
+        },
+        "prefix": ""
+      }
+    }
+  ]
+}

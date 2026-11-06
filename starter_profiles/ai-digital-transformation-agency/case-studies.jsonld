@@ -1,0 +1,7 @@
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"CaseStudy","@id":"https://example-ai-transform.example/case-studies/operations","name":"Demo Operations Modernization","url":"https://example-ai-transform.example/case-studies/operations","description":"Synthetic case study illustrating discovery of repetitive workflows and an AI-assisted operating model."},
+    {"@type":"CaseStudy","@id":"https://example-ai-transform.example/case-studies/knowledge","name":"Demo Enterprise Knowledge Experience","url":"https://example-ai-transform.example/case-studies/knowledge","description":"Synthetic case study illustrating a governed knowledge retrieval experience for employees and customers."}
+  ]
+}

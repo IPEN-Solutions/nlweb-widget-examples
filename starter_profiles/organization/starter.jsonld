@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://example.com/organization/#entity",
+  "name": "Example Organization",
+  "url": "https://example.com/organization/",
+  "description": "Organization starter profile. Replace with authoritative domain content."
+}

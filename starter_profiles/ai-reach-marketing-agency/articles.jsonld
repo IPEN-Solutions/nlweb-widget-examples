@@ -1,0 +1,7 @@
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Article","headline":"Designing an AI-Reach Content Flow","url":"https://example-ai-reach.example/articles/ai-reach-content-flow","description":"Synthetic article explaining how authoritative content can be structured for people, search systems and AI agents."},
+    {"@type":"Article","headline":"Organic Inbound Marketing Meets MarTech","url":"https://example-ai-reach.example/articles/inbound-martech","description":"Synthetic article showing how inbound content, data and automation can work as one marketing flow."}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Service","@id":"https://example-ai-reach.example/services/ai-reach","name":"AI-Reach Marketing","serviceType":"Digital marketing","provider":{"@id":"https://example-ai-reach.example/#organization"},"description":"Demo service focused on making authoritative business content easier for AI agents and search systems to discover, interpret and retrieve."},
+    {"@type":"Service","@id":"https://example-ai-reach.example/services/inbound","name":"Organic Inbound Marketing","serviceType":"Inbound marketing","provider":{"@id":"https://example-ai-reach.example/#organization"},"description":"Demo service covering useful content, organic discovery journeys, conversion paths and audience intent."},
+    {"@type":"Service","@id":"https://example-ai-reach.example/services/structured-content","name":"Structured Content & Entity Optimization","serviceType":"Content strategy","provider":{"@id":"https://example-ai-reach.example/#organization"},"description":"Demo service covering structured data, entity consistency, canonical content and machine-readable domain information."},
+    {"@type":"Service","@id":"https://example-ai-reach.example/services/martech","name":"MarTech & Marketing Automation","serviceType":"Marketing technology consulting","provider":{"@id":"https://example-ai-reach.example/#organization"},"description":"Demo service connecting CRM, analytics, content operations and marketing automation into measurable customer journeys."}
+  ]
+}

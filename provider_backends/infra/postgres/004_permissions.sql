@@ -1,0 +1,2 @@
+-- Optional least-privilege example. Replace nlweb_app with your deployment role before running.
+-- GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE nlweb_documents TO nlweb_app;

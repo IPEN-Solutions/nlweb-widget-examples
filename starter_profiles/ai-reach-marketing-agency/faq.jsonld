@@ -1,0 +1,9 @@
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "@id":"https://example-ai-reach.example/faq",
+  "mainEntity":[
+    {"@type":"Question","name":"What is AI-Reach Marketing in this example?","acceptedAnswer":{"@type":"Answer","text":"It is a demo business term for practices intended to make authoritative content easier for AI agents and search systems to discover and interpret. It is not a new Schema.org type."}},
+    {"@type":"Question","name":"Does AI-reach replace organic inbound marketing?","acceptedAnswer":{"@type":"Answer","text":"No. The demo model treats AI-facing discoverability as complementary to useful content, organic inbound journeys, structured data and measurable marketing operations."}}
+  ]
+}

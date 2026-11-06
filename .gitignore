@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+dist/
+build/
+.env
+.env.mteb
+node_modules/
+
+.nlweb-sync-state.json
+*.nlweb-sync-state.json
+
+# Runtime state for optional external-source examples.
+# examples/external_hosted_sources/domain_site_extractor/runtime/
+examples/external_hosted_sources/domain_site_extractor/generated/*.json*
+# examples/embedding_benchmark/runtime/
+examples/embedding_benchmark/benchmark_results/
+site/
+runtime/
+# Local-only mutation/build evidence; never commit or include in release archives.
+/package-mutation-evidence/

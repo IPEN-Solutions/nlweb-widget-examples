@@ -1,0 +1,93 @@
+{
+  "version": "1",
+  "artifacts": [
+    {
+      "artifact": "domain.jsonld",
+      "type": "Organization",
+      "grounding": {
+        "source": "https://example.org/organization",
+        "description": "QA public evidence reference for the structured organization record",
+        "citations": [
+          {
+            "label": "Organization profile",
+            "source_url": "https://example.org/organization"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Organization",
+          "https://example.org/schemas/organization-v1.json"
+        ]
+      }
+    },
+    {
+      "artifact": "capabilities.md",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/capabilities-markdown",
+        "description": "QA evidence reference for the Markdown capabilities brief",
+        "citations": [
+          {
+            "label": "Capabilities overview",
+            "source_url": "https://example.org/services/capabilities"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    },
+    {
+      "artifact": "capabilities.txt",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/capabilities-text",
+        "description": "QA evidence reference for the plain-text capabilities brief",
+        "citations": [
+          {
+            "label": "Capabilities overview",
+            "source_url": "https://example.org/services/capabilities"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    },
+    {
+      "artifact": "digital-engineering-brief.pdf",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/digital-engineering-brief.pdf",
+        "description": "QA evidence reference for the PDF engineering brief",
+        "citations": [
+          {
+            "label": "Engineering brief",
+            "source_url": "https://example.org/evidence/digital-engineering-brief.pdf",
+            "page": 1
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    },
+    {
+      "artifact": "industrial-platforms.pptx",
+      "type": "Article",
+      "grounding": {
+        "source": "https://example.org/evidence/industrial-platforms-presentation",
+        "description": "QA evidence reference for the PowerPoint industrial platforms presentation",
+        "citations": [
+          {
+            "label": "Industrial platforms overview",
+            "source_url": "https://example.org/evidence/industrial-platforms-presentation",
+            "page": 1
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "directory-ai-consulting",
+    "url": "http://localhost:8080/directory/ai-consulting",
+    "title": "AI Consulting Services",
+    "content": "A local business directory listing for AI consulting covering strategy, readiness and implementation planning.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "http://localhost:8080/directory/ai-consulting",
+      "name": "AI Consulting Services",
+      "description": "Local directory listing for AI strategy, readiness and implementation consulting."
+    }
+  },
+  {
+    "id": "directory-digital-marketing",
+    "url": "http://localhost:8080/directory/digital-marketing",
+    "title": "Digital Marketing Studio",
+    "content": "A local business listing for organic inbound marketing, structured content and marketing automation services.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "http://localhost:8080/directory/digital-marketing",
+      "name": "Digital Marketing Studio",
+      "description": "Local marketing business offering organic inbound, structured content and automation services."
+    }
+  },
+  {
+    "id": "directory-business-automation",
+    "url": "http://localhost:8080/directory/business-automation",
+    "title": "Business Automation Partner",
+    "content": "A business directory listing for workflow automation and AI-enabled process improvement.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "http://localhost:8080/directory/business-automation",
+      "name": "Business Automation Partner",
+      "description": "Business automation provider focused on workflow improvement and AI-enabled operations."
+    }
+  }
+]

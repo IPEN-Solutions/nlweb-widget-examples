@@ -1,0 +1,33 @@
+# One-to-one acquisition mapping: each section name must match a registry source name
+# and a prompt scenario. `site` is a consumer-controlled retrieval corpus ID, not a URL.
+# `artifact` is an exact file path, never a shared directory.
+
+[sources.company_website]
+urls = []
+url_env = "NLWEB_EXTERNAL_SOURCE_COMPANY_WEBSITE_URL"
+site = "external-source.example"
+artifact = "generated/external-source.example.jsonld"
+
+[sources.company_knowledge_base]
+urls = []
+url_env = "NLWEB_EXTERNAL_SOURCE_KNOWLEDGE_BASE_URL"
+site = "help.external-source.example"
+artifact = "generated/help.external-source.example.jsonld"
+
+[sources.company_portal]
+urls = []
+url_env = "NLWEB_EXTERNAL_SOURCE_PORTAL_URL"
+site = "manuals.products.external-source.example"
+artifact = "generated/manuals.products.external-source.example.jsonld"
+
+[sources.product_service_catalog]
+urls = []
+url_env = "NLWEB_EXTERNAL_SOURCE_CATALOG_URL"
+site = "products.external-source.example"
+artifact = "generated/products.external-source.example.jsonld"
+
+[sources.company_newsroom]
+urls = []
+url_env = "NLWEB_EXTERNAL_SOURCE_NEWSROOM_URL"
+site = "news.external-source.example"
+artifact = "generated/news.external-source.example.jsonld"

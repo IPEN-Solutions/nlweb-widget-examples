@@ -1,0 +1,13 @@
+{"id":"en-to-fa-immigration","language":"en","text":"What immigration guidance is available for business owners?","relevant":{"fa-immigration-business":3,"en-immigration":2},"answerable":true}
+{"id":"fa-to-en-immigration","language":"fa","text":"برای صاحبان کسب‌وکار چه خدماتی درباره مسیرهای مهاجرتی دارید؟","relevant":{"en-immigration":3,"fa-immigration-business":2},"answerable":true}
+{"id":"en-to-fa-ai","language":"en","text":"Help our organization automate operations with artificial intelligence.","relevant":{"fa-ai-automation":3,"en-ai-automation":3},"answerable":true}
+{"id":"fa-to-en-ai","language":"fa","text":"چطور می‌توان فرایندهای سازمانی را با هوش مصنوعی خودکار کرد؟","relevant":{"en-ai-automation":3,"fa-ai-automation":3},"answerable":true}
+{"id":"fa-spelling-variant","language":"fa","text":"خدمات مشاوره مهاجرتی برای متخصصین فنی و علمی چیست؟","relevant":{"fa-engineering":3,"en-technical-careers":2},"answerable":true}
+{"id":"en-to-fa-security","language":"en","text":"Who can review privacy risks and secure access to customer information?","relevant":{"fa-data-security":3,"en-data-security":3},"answerable":true}
+{"id":"fa-to-en-catalogue","language":"fa","text":"چگونه شناسه کالا و موجودی را به کاتالوگ محصولات وصل کنیم؟","relevant":{"en-product-catalog":3,"fa-catalogue":3},"answerable":true}
+{"id":"en-technical-career","language":"en","text":"Career planning for scientists and technical specialists","relevant":{"en-technical-careers":3,"fa-engineering":2},"answerable":true}
+{"id":"mixed-ai","language":"mixed","text":"راهکار AI برای digital transformation و workflow automation","relevant":{"en-ai-automation":3,"fa-ai-automation":3},"answerable":true}
+{"id":"fa-no-answer","language":"fa","text":"آیا خدمات تعمیر موتور هواپیما ارائه می‌کنید؟","relevant":{},"answerable":false}
+{"id":"en-no-answer","language":"en","text":"What is the current weather forecast for Baku tomorrow?","relevant":{},"answerable":false}
+{"id":"en-exact-product-data","language":"en","text":"Can you index SKU identifiers and inventory feeds?","relevant":{"en-product-catalog":3,"fa-catalogue":2},"answerable":true}
+{"id":"fa-persian-numerals","language":"fa","text":"آیا می‌توانید SKU-۲۰۴۸ و موجودی کالا را جست‌وجو کنید؟","relevant":{"en-product-catalog":3,"fa-catalogue":2},"answerable":true}

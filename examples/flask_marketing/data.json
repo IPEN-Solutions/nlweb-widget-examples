@@ -1,0 +1,58 @@
+[
+  {
+    "id": "marketing-ai-reach",
+    "url": "https://marketing.example/services/ai-reach",
+    "title": "AI-Reach Marketing",
+    "content": "AI-facing discoverability strategy for businesses, combining structured domain content with useful organic marketing journeys.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marketing.example/services/ai-reach",
+      "name": "AI-Reach Marketing",
+      "serviceType": "Digital marketing",
+      "description": "Makes authoritative business content easier for AI agents and search systems to discover and interpret."
+    }
+  },
+  {
+    "id": "marketing-inbound",
+    "url": "https://marketing.example/services/inbound",
+    "title": "Organic Inbound Marketing",
+    "content": "Content-led inbound marketing covering audience intent, organic discovery journeys, conversion paths and measurable content operations.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marketing.example/services/inbound",
+      "name": "Organic Inbound Marketing",
+      "serviceType": "Inbound marketing",
+      "description": "Useful content and organic discovery journeys designed around customer intent."
+    }
+  },
+  {
+    "id": "marketing-martech",
+    "url": "https://marketing.example/services/martech",
+    "title": "MarTech and Marketing Automation",
+    "content": "CRM, analytics, content operations and marketing automation integrated into measurable customer journeys.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marketing.example/services/martech",
+      "name": "MarTech and Marketing Automation",
+      "serviceType": "Marketing technology consulting",
+      "description": "Connects CRM, analytics, content operations and automation into measurable marketing journeys."
+    }
+  },
+  {
+    "id": "marketing-structured-content",
+    "url": "https://marketing.example/services/structured-content",
+    "title": "Structured Content and Entity Optimization",
+    "content": "Schema.org structured data, entity consistency, canonical content and machine-readable business information.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://marketing.example/services/structured-content",
+      "name": "Structured Content and Entity Optimization",
+      "serviceType": "Content strategy",
+      "description": "Improves machine-readable domain information while preserving authoritative content."
+    }
+  }
+]

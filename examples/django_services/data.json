@@ -1,0 +1,58 @@
+[
+  {
+    "id": "services-consulting",
+    "url": "https://services.example/services/digital-transformation",
+    "title": "Digital Transformation Consulting",
+    "content": "Professional consulting for organizations planning digital transformation programs, operating-model changes and implementation priorities.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://services.example/services/digital-transformation",
+      "name": "Digital Transformation Consulting",
+      "serviceType": "Professional services",
+      "description": "Consulting for digital transformation strategy, operating-model change and implementation planning."
+    }
+  },
+  {
+    "id": "services-ai-readiness",
+    "url": "https://services.example/services/ai-readiness",
+    "title": "AI Readiness Assessment",
+    "content": "Assessment of AI opportunities, data readiness, operating-model considerations and implementation priorities for organizations.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://services.example/services/ai-readiness",
+      "name": "AI Readiness Assessment",
+      "serviceType": "AI consulting",
+      "description": "Evaluates AI opportunities, data readiness and implementation priorities."
+    }
+  },
+  {
+    "id": "services-process-automation",
+    "url": "https://services.example/services/process-automation",
+    "title": "AI Process Automation",
+    "content": "Professional service for identifying suitable business processes and designing AI-enabled automation workflows.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://services.example/services/process-automation",
+      "name": "AI Process Automation",
+      "serviceType": "Business process automation",
+      "description": "Identifies and designs suitable AI-enabled process automation opportunities."
+    }
+  },
+  {
+    "id": "services-multi-location",
+    "url": "https://services.example/services/multi-location",
+    "title": "Multi-Location Service Operations",
+    "content": "Advisory services for organizations coordinating customer and operational processes across multiple locations.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://services.example/services/multi-location",
+      "name": "Multi-Location Service Operations",
+      "serviceType": "Professional services",
+      "description": "Advisory support for service organizations operating across multiple locations."
+    }
+  }
+]

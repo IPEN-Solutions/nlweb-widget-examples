@@ -1,0 +1,9 @@
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "@id":"https://example-ai-transform.example/faq",
+  "mainEntity":[
+    {"@type":"Question","name":"What does an AI readiness assessment cover?","acceptedAnswer":{"@type":"Answer","text":"The demo assessment covers AI opportunities, data readiness, operating-model considerations and implementation priorities."}},
+    {"@type":"Question","name":"Do you provide AI agent development?","acceptedAnswer":{"@type":"Answer","text":"The demo agency profile includes AI agent and knowledge-solution delivery as an example service; replace this with the actual provider's capabilities before production."}}
+  ]
+}

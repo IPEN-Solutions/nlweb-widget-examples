@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://ipen.example/#organization",
+  "name": "IPEN",
+  "url": "https://ipen.example",
+  "description": "Custom development, AI and digital engineering for manufacturers and industrial enterprises \u2014 designed, built and supported.",
+  "knowsAbout": [
+    "custom software development",
+    "AI engineering",
+    "digital engineering",
+    "industrial modernization",
+    "manufacturing technology"
+  ]
+}

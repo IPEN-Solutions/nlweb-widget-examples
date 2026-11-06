@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://example.org/organization#entity",
+  "name": "Example Industrial Systems",
+  "description": "A sample organization offering AI-enabled digital engineering, industrial platforms, and data integration services.",
+  "url": "https://example.org/organization"
+}

@@ -1,0 +1,51 @@
+{
+  "version": "1",
+  "artifacts": [
+    {
+      "artifact": "annual-review.pdf",
+      "type": "Article",
+      "grounding": {
+        "source": "https://REPLACE-WITH-YOUR-DOMAIN.example/evidence/annual-review.pdf",
+        "description": "Replace this placeholder with a public verification URI for the annual review.",
+        "citations": [
+          {
+            "label": "Annual review source",
+            "source_url": "https://REPLACE-WITH-YOUR-DOMAIN.example/evidence/annual-review.pdf",
+            "page": 1
+          },
+          {
+            "label": "Capabilities overview",
+            "source_url": "https://REPLACE-WITH-YOUR-DOMAIN.example/services/capabilities"
+          }
+        ],
+        "schema_refs": [
+          "https://schema.org/Article",
+          "https://REPLACE-WITH-YOUR-DOMAIN.example/schemas/evidence-v1.json"
+        ]
+      }
+    },
+    {
+      "artifact": "capabilities.jsonld",
+      "type": "Service",
+      "grounding": {
+        "source": "https://REPLACE-WITH-YOUR-DOMAIN.example/services/capabilities",
+        "description": "Replace this placeholder with the public canonical service evidence URI.",
+        "citations": [
+          {
+            "label": "Product specifications",
+            "source_url": "https://example.org/products/specifications",
+            "page": 4
+          },
+          {
+            "label": "Pricing and availability",
+            "source_url": "https://example.org/products/pricing"
+          }
+        ],
+        "schema_refs": [
+          "https://example.org/schemas/product-catalog-v1.json",
+          "https://example.org/schemas/product-v1.json"
+        ]
+      }
+    }
+  ]
+}

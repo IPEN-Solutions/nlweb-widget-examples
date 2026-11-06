@@ -1,0 +1,44 @@
+[
+  {
+    "id": "catalog-ai-assistant",
+    "url": "https://catalog.example/products/ai-assistant",
+    "title": "Enterprise AI Assistant",
+    "content": "A SaaS knowledge assistant that helps enterprise teams retrieve approved information and complete guided workflows.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://catalog.example/products/ai-assistant",
+      "name": "Enterprise AI Assistant",
+      "applicationCategory": "BusinessApplication",
+      "description": "Enterprise knowledge assistant for approved information retrieval and guided workflows."
+    }
+  },
+  {
+    "id": "catalog-knowledge",
+    "url": "https://catalog.example/products/knowledge-hub",
+    "title": "Knowledge Hub",
+    "content": "A searchable knowledge product for organizing internal documentation, policies and customer-facing reference material.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://catalog.example/products/knowledge-hub",
+      "name": "Knowledge Hub",
+      "category": "Knowledge management",
+      "description": "Searchable knowledge product for documentation, policies and reference material."
+    }
+  },
+  {
+    "id": "catalog-documentation",
+    "url": "https://catalog.example/products/documentation-suite",
+    "title": "Documentation Suite",
+    "content": "A documentation platform for publishing structured technical content with clear navigation and reusable reference material.",
+    "schema_object": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://catalog.example/products/documentation-suite",
+      "name": "Documentation Suite",
+      "category": "Documentation software",
+      "description": "Platform for publishing structured technical documentation and reusable reference content."
+    }
+  }
+]

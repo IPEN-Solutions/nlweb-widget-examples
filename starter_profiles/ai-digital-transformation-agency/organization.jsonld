@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://example-ai-transform.example/#organization",
+  "name": "Example AI Transformation Partners",
+  "url": "https://example-ai-transform.example/",
+  "description": "Demo agency providing AI strategy, digital transformation consultancy, process automation and AI-enabled solution delivery.",
+  "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "hello@example-ai-transform.example"}],
+  "sameAs": []
+}

@@ -1,0 +1,402 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Test all",
+      "type": "shell",
+      "command": "uv run pytest",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Test integration",
+      "type": "shell",
+      "command": "uv run pytest tests/integration",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Test visibility",
+      "type": "shell",
+      "command": "uv run pytest tests/visibility",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Run FastAPI",
+      "type": "shell",
+      "command": "uv run uvicorn examples.fastapi_retail.app:app --host 127.0.0.1 --port 8000",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Run FastAPI visibility demo",
+      "type": "shell",
+      "command": "uv run python examples/fastapi_retail/agent_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Run Flask",
+      "type": "shell",
+      "command": "uv run flask --app examples.flask_marketing.app run --host 127.0.0.1 --port 8000",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Run Django",
+      "type": "shell",
+      "command": "uv run python examples/django_services/manage_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Run Starlette",
+      "type": "shell",
+      "command": "uv run uvicorn examples.starlette_catalog.app:app --host 127.0.0.1 --port 8000",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Run stdlib HTTP",
+      "type": "shell",
+      "command": "uv run python examples/stdlib_directory/server.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Lint",
+      "type": "shell",
+      "command": "uv run ruff check .",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Format check",
+      "type": "shell",
+      "command": "uv run ruff format --check .",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Build docs",
+      "type": "shell",
+      "command": "uv run zensical build",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: list scenarios",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py --list-scenarios",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-e5-small",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-e5-small",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-multilingual-minilm",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-multilingual-minilm",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-nomic-v2-moe",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-nomic-v2-moe",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-e5-small-plus-minilm",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-e5-small-plus-minilm",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-e5-small-plus-nomic",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-e5-small-plus-nomic",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-minilm-plus-nomic",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-minilm-plus-nomic",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: st-all-three",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py st-all-three",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: ollama-nomic-v2-moe",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py ollama-nomic-v2-moe",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Embedding benchmark: compare-nomic-v2-moe-embedders",
+      "type": "shell",
+      "command": "uv run python examples/embedding_benchmark/run.py compare-nomic-v2-moe-embedders",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: haystack_inmemory — test",
+      "type": "shell",
+      "command": "uv run pytest tests/providers/test_configured_providers.py -k haystack_inmemory",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: haystack_inmemory — run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.provider_backends.haystack_inmemory.app:app --host 127.0.0.1 --port 8000 --env-file examples/provider_backends/haystack_inmemory/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: haystack_inmemory — query demo",
+      "type": "shell",
+      "command": "uv run python examples/provider_backends/haystack_inmemory/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: qdrant_edge — test",
+      "type": "shell",
+      "command": "uv run pytest tests/providers/test_configured_providers.py -k qdrant_edge",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: qdrant_edge — run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.provider_backends.qdrant_edge.app:app --host 127.0.0.1 --port 8000 --env-file examples/provider_backends/qdrant_edge/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: qdrant_edge — query demo",
+      "type": "shell",
+      "command": "uv run python examples/provider_backends/qdrant_edge/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: qdrant_server — test",
+      "type": "shell",
+      "command": "uv run pytest tests/providers/test_configured_providers.py -k qdrant_server",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: qdrant_server — run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.provider_backends.qdrant_server.app:app --host 127.0.0.1 --port 8000 --env-file examples/provider_backends/qdrant_server/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: qdrant_server — query demo",
+      "type": "shell",
+      "command": "uv run python examples/provider_backends/qdrant_server/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: postgres_pgvector — test",
+      "type": "shell",
+      "command": "uv run pytest tests/providers/test_configured_providers.py -k postgres_pgvector",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: postgres_pgvector — run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.provider_backends.postgres_pgvector.app:app --host 127.0.0.1 --port 8000 --env-file examples/provider_backends/postgres_pgvector/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: postgres_pgvector — query demo",
+      "type": "shell",
+      "command": "uv run python examples/provider_backends/postgres_pgvector/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: neo4j — test",
+      "type": "shell",
+      "command": "uv run pytest tests/providers/test_configured_providers.py -k neo4j",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: neo4j — run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.provider_backends.neo4j.app:app --host 127.0.0.1 --port 8000 --env-file examples/provider_backends/neo4j/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: neo4j — query demo",
+      "type": "shell",
+      "command": "uv run python examples/provider_backends/neo4j/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: sqlite — test",
+      "type": "shell",
+      "command": "uv run pytest tests/providers/test_configured_providers.py -k sqlite",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: sqlite — run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.provider_backends.sqlite.app:app --host 127.0.0.1 --port 8000 --env-file examples/provider_backends/sqlite/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Provider: sqlite — query demo",
+      "type": "shell",
+      "command": "uv run python examples/provider_backends/sqlite/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "External hosted sources: test",
+      "type": "shell",
+      "command": "uv run pytest tests/test_external_hosted_sources.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "External hosted sources: run",
+      "type": "shell",
+      "command": "uv run uvicorn examples.external_hosted_sources.domain_site_extractor.app:app --host 127.0.0.1 --port 8000 --env-file examples/external_hosted_sources/domain_site_extractor/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "External hosted sources: query demo",
+      "type": "shell",
+      "command": "uv run python examples/external_hosted_sources/domain_site_extractor/query_demo.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "External hosted sources: extraction demo",
+      "type": "shell",
+      "command": "uv run python -m examples.external_hosted_sources.domain_site_extractor.demo",
+      "options": {
+        "env": {
+          "PYTHONUNBUFFERED": "1"
+        }
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Local Scrapy + Ollama: test",
+      "type": "shell",
+      "command": "uv run --extra local-scrapy-ollama pytest tests/test_local_scrapy_ollama.py -q",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Local Scrapy + Ollama: run (set URL first)",
+      "type": "shell",
+      "command": "uv run --extra local-scrapy-ollama python -m examples.external_hosted_sources.domain_site_extractor.local_scrapy_ollama https://example.org/ --allowed-hosts example.org",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Remote storage: test options forwarding",
+      "type": "shell",
+      "command": "uv run pytest tests/test_external_hosted_sources.py -k remote_storage_options -q",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Document store: test CouchDB ingestion",
+      "type": "shell",
+      "command": "uv run pytest tests/test_document_store_couchdb.py -q",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Document store: run after enabling registry source",
+      "type": "shell",
+      "command": "uv run uvicorn examples.external_hosted_sources.domain_site_extractor.app:app --host 127.0.0.1 --port 8000 --env-file examples/external_hosted_sources/domain_site_extractor/.env",
+      "problemMatcher": [
+        "$python"
+      ]
+    }
+  ]
+}

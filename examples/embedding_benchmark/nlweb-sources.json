@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "name": "embedding-benchmark-local-sources",
+  "purpose": "Benchmark-owned corpus and query fixtures; not the global Widget source registry.",
+  "sources": [
+    {
+      "name": "benchmark-corpus",
+      "kind": "jsonl",
+      "location": "inbox/corpus.jsonl",
+      "enabled": true,
+      "role": "retrieval-documents",
+      "site": "embedding-benchmark"
+    },
+    {
+      "name": "benchmark-queries",
+      "kind": "jsonl",
+      "location": "inbox/queries.jsonl",
+      "enabled": true,
+      "role": "evaluation-queries-and-judgments",
+      "site": "embedding-benchmark"
+    },
+    {
+      "name": "domain-corpus-jsonl",
+      "kind": "jsonl",
+      "location": "../domain-data/corpus.jsonl",
+      "enabled": false,
+      "role": "retrieval-documents",
+      "site": "domain-benchmark",
+      "allow_external_path": true,
+      "description": "Enable and customize location for a domain-specific judged corpus."
+    }
+  ]
+}

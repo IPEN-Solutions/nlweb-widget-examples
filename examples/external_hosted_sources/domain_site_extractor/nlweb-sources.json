@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "name": "authoritative_domain",
+      "kind": "custom",
+      "location": "content/inbox",
+      "site": "external-source.example",
+      "enabled": true,
+      "metadata": {
+        "purpose": "consumer-authoritative-domain-inbox",
+        "corpus_role": "root-domain",
+        "url": "https://external-source.example/"
+      }
+    },
+    {
+      "name": "company_website",
+      "kind": "custom",
+      "location": "generated/external-source.example.jsonld",
+      "site": "external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "scenario-specific-hosted-source-jsonld-projection",
+        "scenario": "company_website",
+        "artifact": "generated/external-source.example.jsonld"
+      }
+    },
+    {
+      "name": "company_knowledge_base",
+      "kind": "custom",
+      "location": "generated/help.external-source.example.jsonld",
+      "site": "help.external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "scenario-specific-hosted-source-jsonld-projection",
+        "scenario": "company_knowledge_base",
+        "artifact": "generated/help.external-source.example.jsonld"
+      }
+    },
+    {
+      "name": "company_portal",
+      "kind": "custom",
+      "location": "generated/manuals.products.external-source.example.jsonld",
+      "site": "manuals.products.external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "scenario-specific-hosted-source-jsonld-projection",
+        "scenario": "company_portal",
+        "artifact": "generated/manuals.products.external-source.example.jsonld"
+      }
+    },
+    {
+      "name": "product_service_catalog",
+      "kind": "custom",
+      "location": "generated/products.external-source.example.jsonld",
+      "site": "products.external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "scenario-specific-hosted-source-jsonld-projection",
+        "scenario": "product_service_catalog",
+        "artifact": "generated/products.external-source.example.jsonld"
+      }
+    },
+    {
+      "name": "company_newsroom",
+      "kind": "custom",
+      "location": "generated/news.external-source.example.jsonld",
+      "site": "news.external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "scenario-specific-hosted-source-jsonld-projection",
+        "scenario": "company_newsroom",
+        "artifact": "generated/news.external-source.example.jsonld"
+      }
+    },
+    {
+      "name": "authoritative_domain_document_store",
+      "kind": "custom",
+      "location": "couchdb+${NLWEB_COUCHDB_URL}/${NLWEB_COUCHDB_DATABASE}",
+      "site": "external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "consumer-authoritative-document-store-source",
+        "corpus_role": "root-domain",
+        "url": "https://external-source.example/",
+        "document_store_options": {
+          "username": "${NLWEB_DOCUMENT_STORE_USERNAME}",
+          "password": "${NLWEB_DOCUMENT_STORE_PASSWORD}",
+          "database": "${NLWEB_COUCHDB_DATABASE}"
+        }
+      }
+    },
+    {
+      "name": "authoritative_domain_remote_storage",
+      "kind": "custom",
+      "location": "s3://${NLWEB_REMOTE_STORAGE_BUCKET}/",
+      "site": "external-source.example",
+      "enabled": false,
+      "metadata": {
+        "purpose": "consumer-authoritative-remote-object-storage-source",
+        "corpus_role": "root-domain",
+        "url": "https://external-source.example/"
+      },
+      "remote_storage_options": {
+        "key": "${NLWEB_REMOTE_STORAGE_ACCESS_KEY}",
+        "secret": "${NLWEB_REMOTE_STORAGE_SECRET_KEY}",
+        "client_kwargs": {
+          "region_name": "${NLWEB_REMOTE_STORAGE_REGION}",
+          "endpoint_url": "${NLWEB_REMOTE_STORAGE_ENDPOINT_URL}"
+        },
+        "prefix": ""
+      }
+    }
+  ]
+}
