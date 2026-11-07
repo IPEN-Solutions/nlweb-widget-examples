@@ -90,9 +90,6 @@ visibility = [
 # Do not build/install the examples project itself when syncing this environment.
 package = false
 
-[tool.uv.sources]
-nlweb-widget = { path = "../nlweb_widget", editable = true }
-
 # Widget developers can switch the runtime dependency to a local sibling checkout:
 # uv add --editable ../nlweb_widget
 
@@ -107,12 +104,3 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
-# Ignore specific rules if needed
-ignore = ["E501","E402"]
-# Allow unused variables when underscore-prefixed.
-dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
-
-[tool.ruff.format]
-# Automatically detect the appropriate line ending.
-line-ending = "auto"
-
