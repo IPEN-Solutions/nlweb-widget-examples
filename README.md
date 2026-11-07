@@ -62,8 +62,5 @@ CouchDB initializers and example HTTP clients bypass environment proxies for loo
 
 `NLWEB_EXTERNAL_SOURCE_EXTRACTOR_BACKEND` must be explicitly configured when extraction runs; code does not silently default to an LLM backend. `scrapegraphai` and `scrapy_ollama` require `NLWEB_EXTERNAL_SOURCE_LLM_ENABLED=true`. `custom` requires `NLWEB_EXTERNAL_SOURCE_ENABLED=true` and a configured `NLWEB_EXTERNAL_SOURCE_EXTRACTOR_FACTORY`. When both enable flags are true, the custom non-LLM extractor and selected LLM backend execute as separate paths. Each writes its own JSON-LD artifact and provenance manifest, and the runtime source registry registers them independently; their records are never automatically merged. Scrapy/Ollama preserves source JSON-LD and scraped page text even when local Ollama is unavailable; only model-derived claims are omitted. Source ingestion now supports DOCX directly and reports/skips artifact-manifest mismatches per artifact while continuing healthy artifacts. `fonttools` is included to improve PDF parsing of embedded CFF Type1 font encodings.
 
-## Private mutation evidence
-
-Keep iteration candidates, supporting reports, QA evidence, and build manifests under `package-mutation-evidence/` at the workspace root. This local-only directory is Git-ignored and must be excluded from release archives. Public README/docs and functional runtime evidence manifests stay in their normal locations.
-
-Embedding benchmark note: scenario definitions control whether Sentence Transformers may execute custom model repository code. Review the repository and pin a trusted revision before running a scenario with `trust_remote_code = true`; see `examples/embedding_benchmark/README.md`.
+### Embedding benchmark note:
+scenario definitions control whether Sentence Transformers may execute custom model repository code. Review the repository and pin a trusted revision before running a scenario with `trust_remote_code = true`; see `examples/embedding_benchmark/README.md`.
